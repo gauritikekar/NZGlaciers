@@ -1,0 +1,38 @@
+<div class="container">
+	<div class="row">
+		<div class="col-xs-6 labels"> 
+			<label for="NECoordinates">Enter NE coordinates*</label> 
+		</div>
+		<div class="col-xs-6"> 
+			<input type="text" id="NECoordinates" ng-model="NECoord" placeholder="x y" ng-change="validate()" ng-required>
+			<span ng-if="error"> *please enter in "x y" format </span>
+		</div>	    
+	</div>
+	<div class="row">
+		<div class="col-xs-6 labels"> 
+			<label for="DroneDropCoordinates">Enter Drone drop coordinates* </label> 
+		</div>
+		<div class="col-xs-6"> 
+			<input type="text" id="DroneDropCoordinates" placeholder="x y" ng-change="validate()" ng-model="droneDropCoord">
+			<select ng-model="dirSelected" ng-options="dir for dir in directions">
+			</select>
+		</div>	    
+	</div>
+	<div class="row">
+		<div class="col-xs-6 labels"> 
+			<label for="MovementNDirection">Enter Movement and direction* </label> 
+		</div>
+		<div class="col-xs-6"> 
+			<input type="text" id="MovementNDirection" ng-model="droneMoveDirection">
+			<button ng-click="onSubmit()">Submit</button>
+		</div>	    
+	</div>
+	<div class="row">
+		<div class="col-xs-6 labels"> 
+			<label for="droneFinalPos">Drone Final position</label> 
+		</div>
+		<div class="col-xs-6"> 
+			<input type="text" id="droneFinalPos" ng-model="droneFinalPosition">
+		</div>	    
+	</div>
+</div>

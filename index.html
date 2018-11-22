@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="DroneApp">
+<head lang="en">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NZ Glaciers - Drone Mapping</title>
+	<!-- bootstrap -->
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="lib/bootstrap.min.js"></script>
+	<!-- angular -->
+	<script type="text/javascript" src="lib/angular.min.js"></script>
+	<script type="text/javascript" src="lib/angular-route.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!-- controllers -->
+	<script type="text/javascript" src="js/droneCtrl.js"></script>
+	<!-- services -->
+	<script type="text/javascript" src="js/droneSrvc.js"></script>
+</head>
+<body>
+	<div class="jumbotron jumbotron-fluid">
+	  	<div class="container">
+	    	<h1 class="display-4">NewZealand Glaciers Drone Mapping</h1>
+	  	</div>
+	</div>
+	<div ng-view></div>
+</body>
+</html>
